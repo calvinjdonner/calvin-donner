@@ -23,10 +23,17 @@ header {
     flex-wrap: wrap;
     top: 0;
     background-size: cover;
-    background-position: center;
     background-attachment: fixed;
     background-position: 80%;
     z-index: 9999;
+    padding: 2rem;
+}
+header a {
+    font-size: 4rem;
+}
+
+nav {
+    align-self: center;
 }
 
 header h1 {
@@ -47,7 +54,7 @@ header ul li a {
     text-decoration: none;
     color: var(--green);
     list-style: none;
-    font-size: 2.5vw;
+    font-size: 1.5rem;
     padding: 10px 15px;
 }
 
@@ -56,39 +63,73 @@ header ul li a:hover {
     list-style: none;
 }
 
-h2 {
-    text-align: center;
+.social-buttons img {
+    width: 100px; 
 }
 
 .hero {
     display: flex;
-    padding-bottom: 30px;
+    padding: 5rem 0 15rem 0;
+    align-self: center; 
+    margin: auto;
+    max-width: 900px;
+    justify-content: center;
 }
 
 .hero img {
-    max-width: 25%;
+    max-width: 25rem;
     height: auto;
     padding: 20px;
 }
 
-.hero div {
-    flex-direction: row-reverse;
-}
-
 .hero-cta {
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: normal;
-    list-style: none;
+    align-self: center;
     height: fit-content;
-    width: 75%;
+    width: 50%;
+    padding:1rem;
 }
+
+.hero-cta h2 {
+    font-size: 2.5rem;
+}
+
+.hero-cta p {
+    padding: .5rem 0 .5rem 0;
+
+}
+
+.hero-cta button{
+    padding: .5rem;
+    width: max-content;
+    margin:0 auto;
+    text-transform: uppercase;
+    border: 1px solid var(--black);
+    letter-spacing: 2px;
+    color: var(--green);
+    font-weight: bold;
+}
+
+.about {
+    text-align: center;
+    padding: 2.5rem 0 15rem 0;
+    margin: auto 0;
+    background-color: var(--black);
+    color: var(--gray);
+}
+
+.portfolio-container {
+    text-align: center;
+    padding: 2.5rem 0 10rem 0;
+}
+
 .portfolio-cards {
     flex-wrap: wrap;
     display: flex;
-    align-items: stretch;
-    justify-content: space-evenly;
-    padding: 5%;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content:space-evenly;
+    padding: 0 auto;
 }
 
 .portfolio-cards img {
@@ -103,23 +144,76 @@ h2 {
     margin: 0 auto;
 }
 
-.run-buddy, .dwell, .calculator, .skull-king {
+.run-buddy, .dwell, .calculator {
     box-shadow: 5px 8px 12px 1px rgb(0 0 0 / 24%);
     text-align: center;
     margin: 2%;
     padding: 2%;
 }
 
-.portfolio-cards h3, p {
-    padding: 2%;
-}
-
-address img {
+.phone-email img {
     height: 50px;
-    width: 50px ;
+    width: 50px;
 }
 
-.contact h2 {
-    text-align: left;
-    color: aqua;
+a {
+    text-decoration: none;
+    margin: auto 0;
+    color: var(--black);
+    text-align: center;
+    font-weight: 400;
 }
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 87%;
+    max-width: 1300px;
+}
+
+.contact-details h2, .portfolio-container h2, .about h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+}
+
+form {
+    width: 50%;
+    display: block;
+}
+
+input[type=text], input[type=email], input[type=tel], textarea {
+    padding: .5rem 1rem;
+    font-size: 13px;
+    border: none;
+    width: 100%;
+}
+
+.post label {
+    display: block;
+    text-align: left;
+    margin: .5rem 0 .5rem 0;
+}
+
+.button {
+    width: max-content;
+    margin:0 auto;
+    text-transform: uppercase;
+    border: 1px solid var(--black);
+    letter-spacing: 2px;
+    padding: 1em 2em;
+    color: var(--green);
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 8rem;
+    padding: 1.5rem;
+    display: block;
+    text-align: center;
+    background-color: var(--black);
+    color: var(--gray);
+}
+
+
+

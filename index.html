@@ -21,7 +21,7 @@
                         <a href="#portfolio">Portfolio</a>
                     </li>
                     <li>
-                        <a href="#resume">Resume</a>
+                        <a class="#link-to-resume-pdf" href="./assets/images/Calvin Donner Resume (1).pdf" target="blank">Resume</a>
                     </li>
                     <li>
                         <a href="#contact">Contact</a>
@@ -39,18 +39,24 @@
             <div class="hero-cta">
                 <h2>Hi! My name is Calvin.</h2>
                 <p>I'm a Full Stack Web Developer</p>
-                <button type="button">
-                    GitHub
-                </button>
-                <button type="button">
-                    LinkedIn
-                </button>
+            <div class="social-buttons">
+                <a href="https://github.com/calvinjdonner" target="blank"><img src="./assets/images/2048px-Octicons-mark-github.svg.png"></a>
+                <a href="https://www.linkedin.com/in/calvin-donner/" target="blank"><img src="./assets/images/768px-LinkedIn_logo_initials.png"></a>
             </div>
         </section>
         <!-- END HERO -->
 
+        <!-- ABOUT SECTION -->
+        <section id="about" class="about">
+            <h2>ABOUT</h2>
+            <div class="about-me">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </section>
+        <!-- ABOUT SECTION END -->
+
         <!-- PORTFOLIO SECTION -->
-        <section id="portfolio-container" class="">
+        <section id="portfolio" class="portfolio-container">
         <h2>PORTFOLIO</h2>
         <div class="portfolio-cards">
             <div class="run-buddy">
@@ -74,43 +80,37 @@
                 </h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
             </div>
-            <div class="skull-king">
-                <img src="./assets/images/skull-king.JPG" alt="image of skull-king board game">
-                <h3>
-                    Skull King Score
-                </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            </div>
         </div>
         </section> 
         <!-- PORTFOLIO SECTION END -->
 
         <!-- CONTACT SECTION -->
-        <section id="contact">
-        <h2>Contact Me</h2>
-            <address>
-                <img src="./assets/images/640px-Phone_font_awesome.svg.png" alt="phone icon">
-                <a href="tel:682.465.1191">682. 465. 1191</a>
-                <img src="./assets/images/Email_(89509)_-_The_Noun_Project.svg.png" alt="email icon">
-                <a href="mailto:calvinjdonner@gmail.com">calvinjdonner@gmail.com</a>              
-            </address>
-        </section>
+        <section id="contact" class="contact-container">
+            <div class="contact-details">
+                <h2>Contact Me</h2>
+                <div class="phone-email"> 
+                    <img src="./assets/images/640px-Phone_font_awesome.svg.png" alt="phone icon">
+                    <a href="tel:682.465.1191">682. 465. 1191</a> <br />
 
-        <section class="contact-form">
-            <form>
-                <label for="contact-name"></label>
-                <input type="text" id="contact-name" placeholder="name">
+                    <img src="./assets/images/Email_(89509)_-_The_Noun_Project.svg.png" alt="email icon">
+                    <a href="mailto:calvinjdonner@gmail.com">calvinjdonner@gmail.com</a>              
+                </div>
+            </div>
+            <form class="post">
+                <input type="hidden" name="form-name" value="form 1">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Jane Doe"><br />
 
-                <label for="email"></label>
-                <input type="email" id="email" placeholder="email">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="janedoe@example.com"><br />
 
-                <label for="phone"></label>
-                <input type="tel" id="phone" placeholder="phone">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" placeholder="801.867.5309"><br />
 
-                <label for="your-message"></label>
-                <input type="text" id="your-message" placeholder="your message">
+                <label for="your-message">Your Message</label>
+                <textarea type="message" id="your-message" placeholder="Write your message here..." rows="8"></textarea><br />
 
-                <button type="submit">submit</button>
+                <button type="submit" class="button">Send</button>
             </form>
         </section>
         <!-- CONTACT SECTION END -->
