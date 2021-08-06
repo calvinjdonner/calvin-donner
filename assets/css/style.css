@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --gray:#d6d6d6;
+    --green: #6a8765;
+    --gold:#d2bf37;
+}
+
+body {
+    color: #111;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: var(--gray);
+    display: flex;
+}
+
+header h1 {
+    font-size: 5vw;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: var(--green);
+    list-style: none;
+    font-size: 2.5vw;
+}
+
+header ul li a:hover {
+    color: var(--gold);
+}
