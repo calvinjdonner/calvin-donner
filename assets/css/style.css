@@ -82,6 +82,10 @@ header ul li a:hover {
     padding: 20px;
 }
 
+.calvo img {
+    border-radius: 50%;
+    object-position: 50% 50%;
+}
 .hero-cta {
     flex-wrap: wrap;
     align-self: center;
@@ -142,13 +146,19 @@ header ul li a:hover {
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
+    transition: transform .3s ease-in;
 }
 
-.run-buddy, .dwell, .calculator {
+.portfolio-cards img:hover {
+    transform: scale(1.05);
+}
+
+.run-buddy, .horiseon, .calculator {
     box-shadow: 5px 8px 12px 1px rgb(0 0 0 / 24%);
     text-align: center;
     margin: 2%;
     padding: 2%;
+    
 }
 
 .phone-email img {
@@ -197,7 +207,7 @@ input[type=text], input[type=email], input[type=tel], textarea {
 
 .button {
     width: max-content;
-    margin:0 auto;
+    margin:5px auto ;
     text-transform: uppercase;
     border: 1px solid var(--black);
     letter-spacing: 2px;
