@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Poppins&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +14,7 @@
 
 body {
     color: var(--black);
+    font-family: 'Palette Mosaic', cursive;
     font-family: 'Poppins', sans-serif;
     background-color: var(--gray);
 }
@@ -21,12 +23,15 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
     top: 0;
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
     z-index: 9999;
-    padding: 2rem;
+    padding: 0 2rem;
+    background-color: var(--gray);
 }
 header a {
     font-size: 4rem;
@@ -69,7 +74,7 @@ header ul li a:hover {
 
 .hero {
     display: flex;
-    padding: 5rem 0 15rem 0;
+    padding: 5rem 0 10rem 0;
     align-self: center; 
     margin: auto;
     max-width: 900px;
@@ -95,7 +100,7 @@ header ul li a:hover {
 }
 
 .hero-cta h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .hero-cta p {
@@ -114,13 +119,19 @@ header ul li a:hover {
     font-weight: bold;
 }
 
-.about {
+.about{
     text-align: center;
-    padding: 2.5rem 0 15rem 0;
+    padding: 2.5rem 0 5rem 0;
     margin: auto 0;
     background-color: var(--black);
     color: var(--gray);
 }
+
+.about p {
+    margin: 0 5% 0 5%;
+    font-size: 1.5rem;
+}
+
 
 .portfolio-container {
     text-align: center;
@@ -133,15 +144,24 @@ header ul li a:hover {
     flex-direction: row;
     align-content: stretch;
     justify-content:space-evenly;
-    padding: 0 auto;
+}
+.portfolio-cards div h3{
+    width: 30%;
+    margin: auto;
+    padding-bottom: .5rem;
+}
+
+.portfolio-cards p {
+    padding-bottom: .5rem;
+    margin: auto;
+    width: 50%;
+}
+
+.portfolio-cards strong {
+    color: var(--gold);
 }
 
 .portfolio-cards img {
-    width: 200px;
-    height: 200px;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
@@ -155,30 +175,33 @@ header ul li a:hover {
 
 .run-buddy, .horiseon, .calculator {
     box-shadow: 5px 8px 12px 1px rgb(0 0 0 / 24%);
-    text-align: center;
     margin: 2%;
-    padding: 2%;
-    
+    padding: 0;
 }
 
-.phone-email-image {
-    display: inline;
-}
-
-.phone-email-image img {
+.contact-details div img {
     height: 50px;
     width: 50px;
-    display: flex;
-    margin: 1rem 0 1rem 0;
 }
 
-.phone-email-text a {
-    display: block;
+.phone-email {
+    display: flex;
+    margin: .5rem 0 .5rem 0;
+    flex-direction: row;
+}
+
+.phone-email a {
+    align-items: center;
     padding: 1rem;
     font-weight: 400;
     color: var(--black);
     text-decoration: none;
     margin: auto 0;
+}
+
+.social-buttons2 img {
+    width: 100px;
+    margin: .5rem 0 .5rem 0;
 }
 
 .contact-container {
@@ -201,9 +224,11 @@ form {
 
 input[type=text], input[type=email], input[type=tel], textarea {
     padding: .5rem 1rem;
-    font-size: 13px;
+    font-size: 1.5rem;
     border: none;
     width: 100%;
+    font-family: 'Palette Mosaic', cursive;
+    font-family: 'Poppins', sans-serif;
 }
 
 .post label {
@@ -221,6 +246,8 @@ input[type=text], input[type=email], input[type=tel], textarea {
     padding: 1em 2em;
     color: var(--green);
     font-weight: bold;
+    font-family: 'Palette Mosaic', cursive;
+    font-family: 'Poppins', sans-serif;
 }
 
 footer {
@@ -232,5 +259,26 @@ footer {
     color: var(--gray);
 }
 
+@media screen and (max-width: 575rem) {
+    .about p {
+        font-size: 1.75rem;
+    }
 
+    .portfolio-cards div h3 {
+        font-size: 1.75rem; 
+    }
+    
+    .portfolio-cards p {
+        font-size: 1.5rem;
+        padding-bottom: .5rem;
+        margin: auto;
+        width: 50%;
+    }
+    .phone-email a{
+        font-size: 1.5rem;
+    }
 
+    input[type=text], input[type=email], input[type=tel], textarea {
+        font-size: 1.5rem;
+    }
+}
