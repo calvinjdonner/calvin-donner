@@ -161,17 +161,24 @@ header ul li a:hover {
     
 }
 
-.phone-email img {
-    height: 50px;
-    width: 50px;
+.phone-email-image {
+    display: inline;
 }
 
-a {
+.phone-email-image img {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    margin: 1rem 0 1rem 0;
+}
+
+.phone-email-text a {
+    display: block;
+    padding: 1rem;
+    font-weight: 400;
+    color: var(--black);
     text-decoration: none;
     margin: auto 0;
-    color: var(--black);
-    text-align: center;
-    font-weight: 400;
 }
 
 .contact-container {
