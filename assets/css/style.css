@@ -129,41 +129,46 @@ header ul li a:hover {
 
 .portfolio-container {
     text-align: center;
-    padding: 2.5rem 0 10rem 0;
+    width: 85%;
+    padding: 2.5rem 0 5rem 0;
+    max-width: 1300px;
+    margin: 0 auto;
+    flex-flow: column;
+
 }
 
-.portfolio-cards {
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: row;
-    align-content: stretch;
-    justify-content:space-evenly;
-}
-.portfolio-cards div h3{
-    width: 30%;
+.portfolio-card {
+    overflow: hidden;
+    box-shadow: 5px 8px 12px 1px rgb(0 0 0 / 24%);
+    border-radius: 8px;
+    background: white;
+    max-width: 500px;
+    width: 63%;
+    flex-flow: row;
     margin: auto;
-    padding-bottom: .5rem;
-}
+    margin-bottom: 1.5rem;
 
-.portfolio-cards p {
-    padding-bottom: .5rem;
+}
+.portfolio-card-text {
+    width: 85%;
+    padding: 1rem;
     margin: auto;
-    width: 50%;
+    max-width: 1200px;
 }
-
-.portfolio-cards strong {
+.portfolio-card-text strong {
     color: var(--gold);
 }
-
-.portfolio-cards img {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-    transition: transform .3s ease-in;
+.portfolio-card-img {
+    cursor:pointer;
 }
 
-.portfolio-cards img:hover {
+.portfolio-card-img img {
+    transition: transform .3s ease-in;
+    width: 20rem;
+    max-width: 500px;
+}
+
+.portfolio-card-img img:hover {
     transform: scale(1.05);
 }
 
