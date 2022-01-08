@@ -7,7 +7,7 @@
 </p>
 
 <p align='center'>
-    <img src='https://img.shields.io/badge/-html-teal' />
+    <img src='https://img.shields.io/badge/-html.js-teal' />
     <img src='https://img.shields.io/badge/-css-yellow' />
 </p>
      
