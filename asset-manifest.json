@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/calvinjdonner/static/css/main.f5b54601.css",
+    "main.js": "/calvinjdonner/static/js/main.249aae70.js",
+    "static/media/fantasy-football.png": "/calvinjdonner/static/media/fantasy-football.80f56fd0bbe19643da3b.png",
+    "static/media/froogal-flyers.png": "/calvinjdonner/static/media/froogal-flyers.3b063129cee549062178.png",
+    "static/media/octocat.png": "/calvinjdonner/static/media/octocat.1c95b85d86a7c25b6f3c.png",
+    "static/media/talkin-pictures.png": "/calvinjdonner/static/media/talkin-pictures.d22f023e4c8a6ba7415c.png",
+    "static/media/sun.png": "/calvinjdonner/static/media/sun.f794832ad72b90c61eb7.png",
+    "static/media/linkedin.png": "/calvinjdonner/static/media/linkedin.7a5eab93c7daf7d2ceeb.png",
+    "static/media/me.png": "/calvinjdonner/static/media/me.ea5c610c3144b5e33782.png",
+    "static/media/moon.png": "/calvinjdonner/static/media/moon.3bea3d398a25611d421b.png",
+    "static/media/phone.png": "/calvinjdonner/static/media/phone.28cae9910ca5ec4cb6fb.png",
+    "index.html": "/calvinjdonner/index.html",
+    "main.f5b54601.css.map": "/calvinjdonner/static/css/main.f5b54601.css.map",
+    "main.249aae70.js.map": "/calvinjdonner/static/js/main.249aae70.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f5b54601.css",
+    "static/js/main.249aae70.js"
+  ]
+}
