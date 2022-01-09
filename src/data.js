@@ -16,17 +16,3 @@ export const projectData = [
     }
 
 ]
-
-export const socials = [
-    {
-        id: 1,
-        img: require("./img/linkedin.png"),
-        link: "https://www.linkedin.com/in/calvin-donner/",
-    },
-
-    {
-        id: 2,
-        img: require("./img/octocat.png"),
-        link: "https://github.com/calvinjdonner",
-    }
-]

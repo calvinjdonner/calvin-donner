@@ -1,7 +1,6 @@
 import React, { useRef, useState, useContext } from 'react';
 import Phone from '../../img/phone.png';
 import Email from '../../img/email.png';
-// import { socials } from "../../data";
 import emailjs from 'emailjs-com';
 import { ThemeContext } from '../../context';
 
@@ -44,11 +43,6 @@ return (
                         <img src={Email} alt="" className="c-icon" />
                         calvinjdonner@gmail.com
                     </div>
-                    {/* <div className="c-info-item">
-                        {socials.map((item) => (
-                            <div key={item.id} img={item.img} link={item.link} />
-                        ))}
-                    </div> */}
                 </div>
             </div>
             <div className="c-right">

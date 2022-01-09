@@ -29,5 +29,4 @@
 
   ## Questions ❓
   Email me with questions or concerns at calvinjdonner@gmail.com
-  <br />
  
