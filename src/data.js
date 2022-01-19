@@ -6,8 +6,8 @@ export const projectData = [
     },
     {
         id: 2,
-        img: require("./img/talkin-pictures.png"),
-        link: "https://talkin-pictures1.herokuapp.com/",
+        img: require("./img/flick-screenshot.png"),
+        link: "https://optimistic-bohr-1f6b1f.netlify.app/",
     },
     {
         id: 3,

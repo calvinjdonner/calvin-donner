@@ -1,5 +1,5 @@
 import React from 'react'
-import Me from "../../img/me.png"
+import Me from "../../img/calvo.JPG"
 
 
 const index = () => {
