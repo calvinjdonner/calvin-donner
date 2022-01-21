@@ -7,7 +7,7 @@ export const projectData = [
     {
         id: 2,
         img: require("./img/flick-screenshot.png"),
-        link: "https://optimistic-bohr-1f6b1f.netlify.app/",
+        link: "https://flick-forage.netlify.app",
     },
     {
         id: 3,
