@@ -13,9 +13,13 @@ code {
 }
 :root {
   --gray:#d6d6d6;
-  --green: #6a8765;
+  --forest: #6a8765;
   --gold:#d2bf37;
   --black:#111;
+  --red: #e83c3c;
+  --yellow: #e6af43;
+  --green: #51bf02;
+  --ghost: #f3f2f2;
 }
 
 .i {
@@ -51,7 +55,7 @@ code {
 
 .i-name {
   font-size: 60px;
-  color: var(--green)
+  color: var(--forest)
 }
 
 .i-title {
@@ -103,7 +107,7 @@ code {
 .a-title {
   font-size: 50px;
   font-weight: 600;
-  color: var(--green)
+  color: var(--forest)
 }
 
 .a-sub {
@@ -130,7 +134,7 @@ code {
 .pj-title {
   font-size: 50px;
   font-weight:600;
-  color: var(--green)
+  color: var(--forest)
 }
 
 .pj-desc {
@@ -155,19 +159,31 @@ code {
 
 .p-browser {
   height: 20px;
-  background-color: rgb(243, 242, 242);
+  background-color: var(--ghost);
   display: flex;
   align-items: center;
   position: sticky;
   z-index: 2;
 }
 
-.p-circle {
+.p-circle1, .p-circle2, .p-circle3 {
   width: 6px;
   height: 6px;
   border-radius: 50%;
   margin: 3px;
   background-color:white;
+}
+
+.p-circle1 {
+  background-color: var(--red)
+}
+
+.p-circle2 {
+  background-color: var(--yellow)
+}
+
+.p-circle3 {
+  background-color: var(--green)
 }
 
 .p-img {
@@ -199,7 +215,7 @@ code {
 .c-title {
   font-size: 50px;
   width: 90%;
-  color: var(--green)
+  color: var(--forest)
 }
 
 .c-info-item {
@@ -233,7 +249,7 @@ textarea {
 
 button {
   padding: 15px;
-  background-color: gray;
+  background-color: var(--forest);
   font-weight: 500;
   cursor: pointer;
 }
