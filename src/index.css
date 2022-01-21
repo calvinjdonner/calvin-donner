@@ -14,7 +14,7 @@ code {
 :root {
   --gray:#d6d6d6;
   --forest: #6a8765;
-  --gold:#d2bf37;
+  --gold:#c9bd63;
   --black:#111;
   --red: #e83c3c;
   --yellow: #e6af43;
@@ -279,7 +279,7 @@ button {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background-color: #999;
+  background-color: var(--forest);
   position: absolute;
   cursor: pointer;
 }
