@@ -1,10 +1,12 @@
 import React, { useContext } from 'react';
 import "../src/index.css";
-import Intro from './components/Intro';
-import About from './components/About';
-import ProjectList from './components/ProjectList';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './components/Home';
+import Nav from './components/Nav';
 import Contact from "./components/Contact";
 import Toggle from "./components/Toggle";
+import Resume from "./components/Resume";
+import Lists from "./components/Lists";
 import { ThemeContext } from "./context";
 
 const App = () => {
@@ -12,13 +14,18 @@ const App = () => {
   const darkMode = theme.state.darkMode;
 
   return (
-    <div style={{ backgroundColor:darkMode ? "#222" : "white" }}>
+    <Router>
+      <Nav />
       <Toggle />
-      <Intro />
-      <About />
-      <ProjectList />
-      <Contact />
+    <div style={{ backgroundColor:darkMode ? "#222" : "white" }}>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/lists" element={<Lists />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </div>
+    </Router>
   )
 }
 
